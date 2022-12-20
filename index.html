@@ -2,10 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="styles.css" rel="stylesheet" />
   <title>A Network of Fools</title>
   <script src="lib/d3.js"></script>
   <script src="network.js"></script>
   <style>
+    @font-face {
+      font-family: 'Aniron';
+      src: url(fonts/anirb___.ttf);
+    }
+    @font-face {
+      font-family: 'Ringbearer';
+      src: url(fonts/RINGM___.TTF);
+    }
+    @font-face {
+      font-family: 'Elvish-Ring';
+      src: url(fonts/elvish_ring_nfi.otf);
+    }
     circle{
       fill-opacity: .9;
     }
@@ -25,14 +39,16 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: "Tempus Sans ITC";
+      //font-family: "Tempus Sans ITC";
+      font-family: Aniron;
+
       font-size: 19pt;
     }
 
   </style>
 </head>
 <body>
-<div class="title"><h1>A Network of Fools</h1> </div>
+<div class="title"><h1>The Network of Fools</h1> </div>
 <script>
 
   graph_data = './data/fools_network.json';
